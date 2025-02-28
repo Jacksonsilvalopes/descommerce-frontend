@@ -26,9 +26,7 @@ export default function ProductDatailsCard({product} : Props){
            <ProductCategory key ={item.id} name={
              item.name
             } />
-        ))}
-     
-      
+        ))}       
         
       </div>
     </div>

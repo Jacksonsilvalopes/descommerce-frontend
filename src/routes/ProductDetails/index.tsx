@@ -1,5 +1,6 @@
-import ButtonInverse from '../../components/ButtonInverse/Index';
-import ButtonPrimary from '../../components/ButtonPrimary/Index';
+import ButtonCunstomized from '../../components/ButtonCunstomized/Index';
+//import ButtonInverse from '../../components/ButtonInverse/Index';
+//import ButtonPrimary from '../../components/ButtonPrimary/Index';
 import HeaderClient from '../../components/HeaderClients';
 import ProductDatailsCard from '../../components/ProductDatailsCard';
 import { ProductDTO } from '../../models/product';
@@ -37,8 +38,8 @@ return  (  <>
       <section id="product-details-section" className="dsc-container">
         <ProductDatailsCard product = {product}/>
         <div className="dsc-btn-page-container">
-           <ButtonPrimary />
-           <ButtonInverse />
+        <ButtonCunstomized textButton='Comprar' />
+           <ButtonCunstomized  textButton='Inicio' />
         </div>
       </section>
     </main>
