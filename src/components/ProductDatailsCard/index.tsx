@@ -29,6 +29,7 @@ export default function ProductDatailsCard({product} : Props){
         ))}       
         
       </div>
+     
     </div>
   </div>
 

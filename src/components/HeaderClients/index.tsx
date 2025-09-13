@@ -1,21 +1,29 @@
-import './styles.css'
-import cart from '../../assets/cart.svg';
+import "./styles.css";
+import cart from "../../assets/cart.svg";
+import { Link } from "react-router-dom";
+import CartIcon from "../CartIcon";
 
+export default function HeaderClient() {
+  return (
+    <header className="dsc-header-client">
+      <nav className="dsc-container">
+        <Link to="/">
+          <h1>DSCommerce</h1>
+        </Link>
 
-export default function HeaderClient(){
-    return (
-        <header className="dsc-header-client">
-    <nav className="dsc-container">
-      <h1>DSCommerce</h1>
-      <div className="dsc-navbar-right">
-        <div className="dsc-menu-items-container">
-          <div className="dsc-menu-item">
-            <img src={cart} alt="Carrinho de compras" />
+        <div className="dsc-navbar-right">
+          <div className="dsc-menu-items-container">
+            <Link to="/cart">
+              <div className="dsc-menu-item">
+
+                <CartIcon />
+
+              </div>
+            </Link>
           </div>
+          <Link to="/login">Entrar</Link>
         </div>
-        <a href="#">Entrar</a>
-      </div>
-    </nav>
-  </header>
-    )
+      </nav>
+    </header>
+  );
 }
